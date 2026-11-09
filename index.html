@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="sr-ME">
+<script>document.documentElement.classList.add('js')</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aqua Bianca — Prirodna izvorska voda</title>
+<meta name="description" content="Aqua Bianca — prirodna izvorska i kisjela voda iz netaknute prirode između Nacionalnog parka Biogradska gora i rijeke Tare.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="alternate" hreflang="sr-ME" href="https://aquabianca-prototip.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://aquabianca-prototip.vercel.app/?lang=en">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <nav class="nav nav-left" aria-label="Glavna navigacija">
+    <a href="#asortiman">Proizvodi</a>
+    <a href="#izvor">Izvor</a>
+    <a href="#kvalitet">Kvalitet</a>
+    <a href="#trenuci">Trenuci</a>
+  </nav>
+  <a href="#top" class="wordmark" aria-label="Aqua Bianca — početna">
+    <span class="wm-main">Aqua Bianca</span>
+    <span class="wm-sub">Spring Water</span>
+  </a>
+  <nav class="nav nav-right">
+    <a href="#partneri">Partneri</a>
+    <a href="#kontakt">Kontakt</a>
+    <span class="lang"><a href="?lang=me" data-lang="me" class="active" hreflang="sr-ME">MNE</a><a href="?lang=en" data-lang="en" hreflang="en">EN</a></span>
+  </nav>
+  <button class="burger" id="burger" aria-label="Meni" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#asortiman">Proizvodi</a>
+  <a href="#izvor">Izvor</a>
+  <a href="#kvalitet">Kvalitet</a>
+  <a href="#trenuci">Trenuci</a>
+  <a href="#zajednica">Zajednica</a>
+  <a href="#partneri">Partneri</a>
+  <a href="#kontakt">Kontakt</a>
+  <div class="lang"><a href="?lang=me" data-lang="me" class="active" hreflang="sr-ME">MNE</a><a href="?lang=en" data-lang="en" hreflang="en">EN</a></div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO (WebGL water ripple over aerial photo) ============ -->
+<section class="hero" id="hero" data-hero>
+  <canvas id="heroGL" aria-hidden="true"></canvas>
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <h1 class="hero-title reveal">Voda je život.<br><em>Izaberite najbolje.</em></h1>
+    <div class="hero-actions reveal">
+      <a href="#asortiman" class="btn btn-light">Asortiman</a>
+      <a href="#izvor" class="btn btn-ghost-light">Upoznajte izvor</a>
+    </div>
+  </div>
+
+  <div class="hero-facts">
+    <div><span class="k">Izvor</span><span class="v">Radigojno, Kolašin</span></div>
+    <div><span class="k">Natrijum</span><span class="v">2,20 mg/l</span></div>
+    <div><span class="k">Standardi</span><span class="v">HACCP · ISO 9001:2015</span></div>
+    <a href="#uvod" class="scroll-cue" aria-label="Skrolujte dolje"><span></span></a>
+  </div>
+</section>
+
+<!-- ============ INTRO STATEMENT (bros-style) ============ -->
+<section class="statement" id="uvod">
+  <p class="reveal">Svaka kapljica vode Aqua Bianca dolazi iz netaknute prirode između Nacionalnog parka Biogradska gora i rijeke Tare koja je pod zaštitom UNESCO-a. To je čini jedinstvenom i balansiranom na način na koji to samo priroda može da podari.</p>
+</section>
+
+<!-- ============ COLLECTIONS BENTO ============ -->
+<section class="collections wrap">
+  <a class="tile tile-s reveal" href="#asortiman" data-goto="izvorska-pet">
+    <img src="assets/web/mirna-PET2w.jpg" alt="Izvorska voda Aqua Bianca u PET ambalaži" loading="lazy">
+    <span class="tile-label">Izvorska voda<small>PET ambalaža</small></span>
+    <span class="tile-btn">Pogledaj asortiman</span>
+  </a>
+  <a class="tile tile-l reveal" href="#asortiman" data-goto="izvorska-staklo">
+    <img src="assets/web/mirna_Staklo_2025.jpg" alt="Izvorska voda Aqua Bianca u staklenoj ambalaži" loading="lazy">
+    <span class="tile-label">Izvorska voda<small>Staklena ambalaža</small></span>
+    <span class="tile-btn">Pogledaj asortiman</span>
+  </a>
+  <a class="tile tile-l green reveal" href="#asortiman" data-goto="kisjela-pet">
+    <img src="assets/web/Kisjela-033Fw.jpg" alt="Kisjela voda Aqua Bianca u PET ambalaži" loading="lazy">
+    <span class="tile-label">Kisjela voda<small>PET ambalaža</small></span>
+    <span class="tile-btn">Pogledaj asortiman</span>
+  </a>
+  <a class="tile tile-s green reveal" href="#asortiman" data-goto="kisjela-staklo">
+    <img src="assets/web/kisjela_Staklo_2025f.jpg" alt="Kisjela voda Aqua Bianca u staklenoj ambalaži" loading="lazy">
+    <span class="tile-label">Kisjela voda<small>Staklena ambalaža</small></span>
+    <span class="tile-btn">Pogledaj asortiman</span>
+  </a>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Biogradska gora</span><i></i><span>Rijeka Tara · UNESCO</span><i></i><span>Kolašin</span><i></i><span>Nizak sadržaj minerala</span><i></i><span>HACCP</span><i></i><span>ISO 9001:2015</span><i></i>
+    <span>Biogradska gora</span><i></i><span>Rijeka Tara · UNESCO</span><i></i><span>Kolašin</span><i></i><span>Nizak sadržaj minerala</span><i></i><span>HACCP</span><i></i><span>ISO 9001:2015</span><i></i>
+  </div>
+</div>
+
+
+<!-- ============ SCROLL STORY: prave fotografije boca ============ -->
+<section class="story" id="prica" aria-label="Od izvora do boce">
+  <div class="story-sticky">
+    <div class="story-bg" aria-hidden="true"><i class="pool p1"></i><i class="pool p2"></i><i class="pool p3"></i><span class="tint"></span></div>
+    <div class="story-stage" id="storyStage" aria-hidden="true">
+      <img class="sb" data-b="izvPET" src="assets/cutouts-web/mirna_05.webp" alt="">
+      <img class="sb" data-b="izvGlass" src="assets/cutouts-web/mirna_075_2025.webp" alt="">
+      <img class="sb" data-b="kisPET" src="assets/cutouts-web/kisjela_033.webp" alt="">
+      <img class="sb" data-b="kisGlass" src="assets/cutouts-web/Staklo_gazirana_075_2025.webp" alt="">
+      <canvas id="bubbles"></canvas>
+      <ul class="callouts" id="callouts">
+        <li><b>2,20</b><span>Natrijum · mg/l</span></li>
+        <li><b>23,25</b><span>Kalcijum · mg/l</span></li>
+        <li><b>2,78</b><span>Magnezijum · mg/l</span></li>
+        <li><b>0,49</b><span>Kalijum · mg/l</span></li>
+        <li><b>122</b><span>Hidrokarbonati · mg/l</span></li>
+      </ul>
+    </div>
+    <div class="wrap story-text">
+      <article class="chap" data-a="-1" data-b=".28">
+        <h2 class="h2">Iz netaknute <em>prirode.</em></h2>
+        <p>Izvor se nalazi daleko od industrijskih postrojenja i zagađivača — između Nacionalnog parka Biogradska gora i rijeke Tare koja je pod zaštitom UNESCO-a.</p>
+      </article>
+      <article class="chap" data-a=".30" data-b=".52">
+        <h2 class="h2">Nizak sadržaj <em>minerala.</em></h2>
+        <ul class="chap-min">
+          <li><b>2,20</b><span>Na mg/l</span></li>
+          <li><b>23,25</b><span>Ca mg/l</span></li>
+          <li><b>2,78</b><span>Mg mg/l</span></li>
+        </ul>
+        <p>Može se konzumirati u kontinuitetu i u povećanim količinama — za sve uzraste.</p>
+      </article>
+      <article class="chap" data-a=".56" data-b=".77">
+        <h2 class="h2">PET ili <em>staklo.</em></h2>
+        <p>Od 0,25 l do 19 l — za dom, sport, kancelariju i restoran. Staklena ambalaža za HoReCa, galoni za aparate za vodu.</p>
+      </article>
+      <article class="chap" data-a=".80" data-b="9">
+        <h2 class="h2">Isti izvor. <em>Drugačiji karakter.</em></h2>
+        <p>Gazirana prirodna mineralna voda Aqua Bianca — jedinstven ukus i balans minerala za svaku priliku.</p>
+        <a href="#asortiman" class="btn btn-dark">Pogledajte asortiman</a>
+      </article>
+    </div>
+    <div class="story-bar" aria-hidden="true"><span id="storyBar"></span></div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT SHOWCASE (WebGL liquid transition + bubbles) ============ -->
+<section class="showcase" id="asortiman">
+  <div class="wrap showcase-grid">
+    <div class="sc-info">
+      <div class="sc-tabs" role="tablist">
+        <button role="tab" class="active" data-cat="izvorska">Izvorska voda</button>
+        <button role="tab" data-cat="kisjela">Kisjela voda</button>
+      </div>
+
+      <div class="sc-current">
+        <p class="sc-kind" id="scKind">Prirodna izvorska voda</p>
+        <h2 class="sc-volume" id="scVolume">0,33 l</h2>
+        <p class="sc-pack" id="scPack">PET ambalaža</p>
+        <p class="sc-desc" id="scDesc"></p>
+      </div>
+
+      <ul class="sc-list" id="scList"></ul>
+
+      <div class="sc-nav">
+        <button class="circle" id="scPrev" aria-label="Prethodni proizvod">&larr;</button>
+        <button class="circle" id="scNext" aria-label="Sljedeći proizvod">&rarr;</button>
+      </div>
+    </div>
+
+    <div class="sc-stage" id="scStage">
+      <canvas id="productGL" aria-hidden="true"></canvas>
+      <img id="scFallback" class="sc-fallback" src="assets/web/mirna_033.jpg" alt="">
+      <span class="sc-hint">Pomjerite kursor preko boce</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MINERALS ============ -->
+<section class="minerals" id="sastav">
+  <div class="wrap">
+    <div class="min-head">
+      <h2 class="h2 light reveal">Prirodno nizak sadržaj minerala — <em>za svaki dan, za sve uzraste.</em></h2>
+      <p class="lead light reveal">Zahvaljujući niskom sadržaju minerala, AQUA BIANCA se može konzumirati u kontinuitetu i u povećanim količinama.</p>
+    </div>
+    <div class="min-grid">
+      <div class="min reveal"><span class="sym">Na<sup>+</sup></span><span class="num" data-count="2.20" data-dec="2">0</span><span class="unit">mg/l</span><span class="name">Natrijum</span><p>Posebno prihvatljiva za osobe sa povišenim krvnim pritiskom.</p></div>
+      <div class="min reveal"><span class="sym">Ca<sup>2+</sup></span><span class="num" data-count="23.25" data-dec="2">0</span><span class="unit">mg/l</span><span class="name">Kalcijum</span><p>Dovoljno da ne dođe do pada nivoa kalcijuma u krvi.</p></div>
+      <div class="min reveal"><span class="sym">Mg<sup>2+</sup></span><span class="num" data-count="2.78" data-dec="2">0</span><span class="unit">mg/l</span><span class="name">Magnezijum</span><p>Preventiva za normalno korišćenje vitamina C i B1.</p></div>
+      <div class="min reveal"><span class="sym">K<sup>+</sup></span><span class="num" data-count="0.49" data-dec="2">0</span><span class="unit">mg/l</span><span class="name">Kalijum</span><p>Bezbjedno za konzumiranje u većim količinama.</p></div>
+      <div class="min reveal"><span class="sym">HCO<sub>3</sub><sup>−</sup></span><span class="num" data-count="122" data-dec="0">0</span><span class="unit">mg/l</span><span class="name">Hidrokarbonati</span><p>Ne narušava kisjelu sredinu želudačnih sokova.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORIGIN ============ -->
+<section class="origin" id="izvor">
+  <div class="wrap origin-grid">
+    <figure class="origin-img reveal">
+      <img src="assets/web/f18.jpg" alt="Pogled iz vazduha na dolinu kod Kolašina" loading="lazy" data-parallax>
+    </figure>
+    <div class="origin-text">
+      <h2 class="h2 reveal">Daleko od industrije. <em>Blizu prirode.</em></h2>
+      <p class="reveal">Izvor prirodne izvorske vode AQUA BIANCA nalazi se u zoni netaknute prirode, daleko od industrijskih postrojenja i zagađivača — između Nacionalnog parka Biogradska gora i rijeke Tare koja je pod zaštitom UNESCO-a.</p>
+      <dl class="facts reveal">
+        <div><dt>Pogon za preradu i flaširanje</dt><dd>Radigojno bb, Kolašin</dd></div>
+        <div><dt>Zaštićena priroda</dt><dd>NP Biogradska gora</dd></div>
+        <div><dt>Svjetska baština</dt><dd>Rijeka Tara — UNESCO</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUALITY ============ -->
+<section class="quality" id="kvalitet">
+  <div class="wrap quality-grid">
+    <div>
+      <h2 class="h2 reveal">Najzahtjevniji standardi <em>kvaliteta i bezbjednosti.</em></h2>
+      <p class="reveal">Vrhunski kvalitet proizvoda naš je cilj kome smo svakodnevno posvećeni. Da bi ostvarili taj cilj, Aqua Bianca brine o zaposlenima, potrošačima, kupcima i dobavljačima.</p>
+      <a class="link-arrow reveal" href="assets/web/Politika_kvaliteta.jpg" target="_blank" rel="noopener">Politika kvaliteta i bezbjednosti proizvoda</a>
+    </div>
+    <div class="certs">
+      <article class="cert reveal">
+        <span class="cert-badge">HACCP</span>
+        <h3>Analiza opasnosti i kritične kontrolne tačke</h3>
+        <p>SGS Certificate SK11/1548</p>
+      </article>
+      <article class="cert reveal">
+        <span class="cert-badge">ISO</span>
+        <h3>ISO 9001:2015</h3>
+        <p>Sistem menadžmenta kvalitetom</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRENUCI (fotografije sa Instagrama) ============ -->
+<section class="moments" id="trenuci">
+  <div class="wrap">
+    <div class="mom-head">
+      <h2 class="h2 reveal">Uz vas. <em>Svaki dan.</em></h2>
+      <p class="reveal">Za stolom, na treningu, na putu — Aqua Bianca je tamo gdje je i vaš dan.</p>
+    </div>
+    <div class="mom-grid">
+      <figure class="m1 reveal"><img src="assets/instagram-web/staklo-na-stijeni-talas.webp" alt="Staklena boca Aqua Bianca na stijeni uz more" loading="lazy"><figcaption>Uz more</figcaption></figure>
+      <figure class="m2 reveal"><img src="assets/instagram-web/sipanje-1.webp" alt="Sipanje vode Aqua Bianca u čašu" loading="lazy"><figcaption>Za stolom</figcaption></figure>
+      <figure class="m3 reveal"><img src="assets/instagram-web/teretana-sklekovi.webp" alt="Aqua Bianca Sport na treningu" loading="lazy"><figcaption>Na treningu</figcaption></figure>
+      <figure class="m4 reveal"><img src="assets/instagram-web/dubai.webp" alt="Boca Aqua Bianca na putovanju" loading="lazy"><figcaption>Na putu</figcaption></figure>
+      <figure class="m5 reveal"><img src="assets/instagram-web/staklo-kafa.webp" alt="Aqua Bianca u staklu uz kafu" loading="lazy"><figcaption>Uz kafu</figcaption></figure>
+      <figure class="m6 reveal"><img src="assets/instagram-web/bazen.webp" alt="Aqua Bianca uz bazen" loading="lazy"><figcaption>Na odmoru</figcaption></figure>
+    </div>
+    <a class="link-arrow reveal" href="https://www.instagram.com/aqua.bianca/" target="_blank" rel="noopener">@aqua.bianca na Instagramu</a>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section class="community" id="zajednica">
+  <div class="wrap">
+    <div class="comm-head">
+      <h2 class="h2 reveal">Uvijek uz ljude. <em>Uvijek sa djecom.</em></h2>
+      <p class="reveal">Koncerti, sportski događaji i edukativni program „Sadimo — gradimo“ — Aqua Bianca je prisutna tamo gdje se zajednica okuplja.</p>
+    </div>
+    <div class="comm-grid">
+      <img class="c1 reveal" src="assets/web/003.jpg" alt="Koncert uz podršku Aqua Bianca" loading="lazy">
+      <img class="c2 reveal" src="assets/web/005561_001.jpg" alt="Program Sadimo-gradimo" loading="lazy">
+      <img class="c3 reveal" src="assets/web/00.jpg" alt="Aqua Bianca boca na bini" loading="lazy">
+      <img class="c4 reveal" src="assets/web/002.jpg" alt="Publika na koncertu" loading="lazy">
+      <img class="c5 reveal" src="assets/web/41547e_003.jpg" alt="Sadimo-gradimo, Mall of Montenegro" loading="lazy">
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ ZA PARTNERE ============ -->
+<section class="p-hero" id="partneri">
+  <div class="p-bg" aria-hidden="true"></div>
+  <div class="lineup" id="lineup" aria-hidden="true">
+    <img src="assets/cutouts-web/mirna_15_19_povratna.webp" style="--h:.5" data-d="8" alt="">
+    <img src="assets/cutouts-web/mirna_5.webp" style="--h:.34" data-d="14" alt="">
+    <img src="assets/cutouts-web/mirna_075_2025.webp" style="--h:.37" data-d="22" alt="">
+    <img src="assets/cutouts-web/Staklo_gazirana_075_2025.webp" style="--h:.37" data-d="16" alt="">
+    <img src="assets/cutouts-web/kisjela_033.webp" style="--h:.24" data-d="24" alt="">
+  </div>
+  <div class="wrap p-hero-inner">
+    <h2 class="p-title reveal">Voda za vaš posao.<br><em>Od 0,25 do 19 litara.</em></h2>
+    <p class="p-lead reveal">Kompletan asortiman prirodne izvorske i kisjele vode u PET, staklenoj i galonskoj ambalaži — za distributere, ugostitelje i kancelarije.</p>
+    <div class="hero-actions reveal">
+      <a href="#kontakt" class="btn btn-light" data-topic="distribution">Zatražite ponudu</a>
+      <a href="#specifikacija" class="btn btn-ghost-light">Asortiman</a>
+    </div>
+  </div>
+  <div class="hero-facts p-facts">
+    <div><span class="k">Asortiman</span><span class="v">13 formata</span></div>
+    <div><span class="k">Ambalaža</span><span class="v">PET · Staklo · Galon</span></div>
+    <div><span class="k">Standardi</span><span class="v">HACCP · ISO 9001:2015</span></div>
+  </div>
+</section>
+
+<section class="channels">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2 reveal">Jedan izvor. <em>Tri načina saradnje.</em></h2>
+    </div>
+    <div class="ch-grid">
+      <article class="ch-card reveal">
+        <div class="ch-img"><img src="assets/instagram-web/boce-svjetlo.webp" alt="Boce Aqua Bianca u rashladnoj vitrini" loading="lazy"></div>
+        <h3>Distribucija i maloprodaja</h3>
+        <p>PET ambalaža od 0,25 l Junior do 5 l — za trgovinske lance, veleprodaju i maloprodajne objekte.</p>
+        <a class="link-arrow" href="#kontakt" data-topic="distribution">Zatražite ponudu</a>
+      </article>
+      <article class="ch-card reveal">
+        <div class="ch-img"><img src="assets/instagram-web/konobar-tacna.webp" alt="Konobar služi Aqua Bianca u staklu" loading="lazy"></div>
+        <h3>HoReCa</h3>
+        <p>Staklena ambalaža 0,25 l i 0,75 l izvorske i kisjele vode — za hotele, restorane i kafiće.</p>
+        <a class="link-arrow" href="#kontakt" data-topic="horeca">Zatražite ponudu</a>
+      </article>
+      <article class="ch-card reveal">
+        <div class="ch-img"><img src="assets/web/mirna_15_19_povratna.jpg" alt="Galon 15/19 l na aparatu za vodu" loading="lazy"></div>
+        <h3>Kancelarije i domaćinstva</h3>
+        <p>Galoni od 10 l (nepovratna) i 15 / 19 l (povratna ambalaža) za aparate za vodu.</p>
+        <a class="link-arrow" href="#kontakt" data-topic="coolers">Naručite galone</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="spec" id="specifikacija">
+  <div class="wrap">
+    <div class="spec-head">
+      <h2 class="h2 reveal">Asortiman <em>za poručivanje.</em></h2>
+      <div class="spec-filter" role="tablist">
+        <button class="active" data-f="all">Sve</button>
+        <button data-f="izvorska">Izvorska</button>
+        <button data-f="kisjela">Kisjela</button>
+        <button data-f="galon">Galoni</button>
+      </div>
+    </div>
+    <p class="proto-note">Prototip: komada u pakovanju, pakovanja po paleti i EAN kodove dostavlja klijent — polja su namjerno prazna.</p>
+    <div class="table-wrap">
+      <table class="spec-table">
+        <thead><tr><th>Proizvod</th><th>Zapremina</th><th>Ambalaža</th><th>Kom / pak</th><th>Pak / paleta</th><th>EAN</th><th></th></tr></thead>
+        <tbody id="specBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2 reveal">Od upita <em>do isporuke.</em></h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><h3>Upit</h3><p>Pošaljite upit sa formatima i okvirnim količinama.</p></li>
+      <li class="reveal"><h3>Ponuda</h3><p>Pripremamo ponudu prilagođenu vašem kanalu prodaje.</p></li>
+      <li class="reveal"><h3>Dogovor</h3><p>Usaglašavamo uslove, asortiman i dinamiku isporuke.</p></li>
+      <li class="reveal"><h3>Isporuka</h3><p>Redovna isporuka iz pogona u Kolašinu.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <h2 class="h2 reveal">Razgovarajmo.</h2>
+      <p class="reveal muted">Za pitanja, saradnju, ponudu ili dostavu galona — javite nam se.</p>
+      <div class="addr reveal">
+        <div><h4>Uprava</h4><p>DOO „Aqua Bianca“<br>Manastirska 25, Podgorica</p></div>
+        <div><h4>Pogon za preradu i flaširanje vode</h4><p>Radigojno bb, Kolašin</p></div>
+        <div><h4>Telefon za potrošače</h4><p><a href="tel:+38220669001">+382 20 669 001</a><br><a href="tel:+38269012512">+382 69 012 512</a></p></div>
+        <div><h4>E-mail</h4><p><a href="mailto:office@aquabianca.com">office@aquabianca.com</a></p></div>
+      </div>
+    </div>
+    <form class="form reveal" id="contactForm">
+      <div class="row">
+        <label><span>Ime i prezime</span><input type="text" required></label>
+        <label><span>Kompanija (opciono)</span><input type="text"></label>
+      </div>
+      <div class="row">
+        <label><span>E-mail</span><input type="email" required></label>
+        <label><span>Telefon</span><input type="tel"></label>
+      </div>
+      <div class="row">
+        <label><span>Tema</span>
+          <select id="topic">
+            <option value="general">Opšti upit</option>
+            <option value="distribution">Distribucija / veleprodaja</option>
+            <option value="retail">Maloprodaja</option>
+            <option value="horeca">HoReCa</option>
+            <option value="coolers">Galoni za kancelariju / dom</option>
+            <option value="media">Mediji</option>
+          </select>
+        </label>
+        <label><span>Grad / region</span><input type="text"></label>
+      </div>
+      <fieldset class="chips">
+        <legend>Proizvodi od interesa</legend>
+        <label><input type="checkbox"><span>Izvorska PET</span></label>
+        <label><input type="checkbox"><span>Izvorska staklo</span></label>
+        <label><input type="checkbox"><span>Kisjela PET</span></label>
+        <label><input type="checkbox"><span>Kisjela staklo</span></label>
+        <label><input type="checkbox"><span>Galoni</span></label>
+      </fieldset>
+      <label><span>Poruka</span><textarea rows="4"></textarea></label>
+      <button class="btn btn-dark" type="submit">Pošaljite poruku</button>
+      <p class="form-note"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="wm-main">Aqua Bianca</span>
+      <span class="wm-sub">Spring Water</span>
+      <p>Voda je život. Izaberite najbolje.</p>
+    </div>
+    <div>
+      <h4>Proizvodi</h4>
+      <a href="#asortiman">Izvorska voda — PET</a>
+      <a href="#asortiman">Izvorska voda — Staklo</a>
+      <a href="#asortiman">Kisjela voda — PET</a>
+      <a href="#asortiman">Kisjela voda — Staklo</a>
+    </div>
+    <div>
+      <h4>Kompanija</h4>
+      <a href="#izvor">Izvor</a>
+      <a href="#kvalitet">Kvalitet</a>
+      <a href="#zajednica">Zajednica</a>
+      <a href="#partneri">Partneri</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div>
+      <h4>Pratite nas</h4>
+      <a href="https://www.instagram.com/aqua.bianca/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/aqua.bianca11/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/channel/UCC1meKyWfn9Syyu8vKxQiaQ" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 DOO „Aqua Bianca“, Podgorica</span>
+    <span>HACCP (SGS SK11/1548) · ISO 9001:2015</span>
+  </div>
+</footer>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+} }
+</script>
+<script type="module">import { initChrome } from './chrome.js'; import { initB2B } from './b2b.js'; import { initI18n } from './i18n.js'; initChrome(); initB2B(); initI18n();</script>
+<script type="module" src="main.js"></script>
+</body>
+</html>

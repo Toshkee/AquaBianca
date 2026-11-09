@@ -1,0 +1,9 @@
+# build output za Vercel (pravi ga deploy.sh)
+deploy/
+.vercel/
+
+# lokalna podešavanja alata
+.claude/
+
+# sistem
+.DS_Store
