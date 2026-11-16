@@ -3,8 +3,8 @@
 set -e
 cd "$(dirname "$0")"
 mkdir -p deploy && find deploy -mindepth 1 -maxdepth 1 ! -name .vercel -exec rm -rf {} + && mkdir -p deploy/assets
-cp index.html styles.css main.js chrome.js story.js b2b.js i18n.js deploy/
-rsync -a assets/web assets/cutouts-web assets/instagram-web deploy/assets/
+cp index.html styles.css main.js chrome.js story.js b2b.js i18n.js media.js venues.js deploy/
+rsync -a assets/web assets/cutouts-web assets/instagram-web assets/venues-web assets/video-web deploy/assets/
 cat > deploy/vercel.json <<'JSON'
 {
   "redirects": [

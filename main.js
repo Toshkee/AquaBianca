@@ -60,6 +60,14 @@ function visibleLoop(el, tick) {
   }).observe(el);
 }
 
+function videoPlaying(v, ms = 5000) {
+  if (v.readyState >= 2 && !v.paused) return Promise.resolve(true);
+  return new Promise((res) => {
+    const t = setTimeout(() => res(false), ms);
+    v.addEventListener('playing', () => { clearTimeout(t); res(true); }, { once: true });
+  });
+}
+
 /* ------------------------------------------------------------------ */
 /*  HERO — water surface over aerial photo, ripples follow the cursor  */
 /* ------------------------------------------------------------------ */
@@ -67,11 +75,21 @@ async function initHero() {
   const hero = document.getElementById('hero');
   const canvas = document.getElementById('heroGL');
   const renderer = makeRenderer(canvas);
-  const tex = await loadTex(IMG('f18'));
+  // nature loop as a live texture; the aerial photo stays as the fallback (reduced motion, autoplay blocked)
+  const video = document.getElementById('heroVideo');
+  let tex, size;
+  if (video && !reduceMotion && await videoPlaying(video)) {
+    tex = new THREE.VideoTexture(video);
+    tex.minFilter = THREE.LinearFilter; tex.generateMipmaps = false;
+    size = [video.videoWidth, video.videoHeight];
+  } else {
+    tex = await loadTex(IMG('f18'));
+    size = [tex.image.width, tex.image.height];
+  }
   const uniforms = {
     uTex: { value: tex },
     uRes: { value: new THREE.Vector2(1, 1) },
-    uImg: { value: new THREE.Vector2(tex.image.width, tex.image.height) },
+    uImg: { value: new THREE.Vector2(size[0], size[1]) },
     uTime: { value: 0 },
     uMouse: { value: new THREE.Vector2(0.5, 0.4) },
     uStrength: { value: 0 },

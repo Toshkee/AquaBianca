@@ -31,5 +31,7 @@ Skripta sklapa folder `deploy/` (samo fajlovi koje sajt koristi) i objavljuje ga
 | `b2b.js` | sekcija za partnere: postava proizvoda, tabela, izbor teme u formi |
 | `chrome.js` | meni, animacije pri skrolu, brojači |
 | `i18n.js` | prevod MNE → EN |
-| `assets/` | fotografije: originali (`proizvodi/`, `galerija/`, `instagram/`, `cutouts/`) i web verzije (`web/`, `cutouts-web/`, `instagram-web/`) |
+| `media.js` | video: hero petlja, petlje u pločicama, klip izvora, reklama u „Trenucima“ |
+| `venues.js` | „Bianca na stolu“: traka fotografija iz objekata i mapa |
+| `assets/` | fotografije: originali (`proizvodi/`, `galerija/`, `instagram/`, `cutouts/`, `venues/`) i web verzije (`web/`, `cutouts-web/`, `instagram-web/`, `venues-web/`); video originali u `video/`, skraćene petlje u `video-web/` |
 | `PREDLOZI.md` | predlozi dizajna i istorija izmjena |

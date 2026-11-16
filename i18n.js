@@ -115,7 +115,36 @@ const EN = new Map(Object.entries({
   'Koncert uz podršku Aqua Bianca': 'Concert supported by Aqua Bianca', 'Program Sadimo-gradimo': 'The Sadimo-gradimo programme', 'Aqua Bianca boca na bini': 'Aqua Bianca bottle on stage',
   'Publika na koncertu': 'Concert audience', 'Sadimo-gradimo, Mall of Montenegro': 'Sadimo-gradimo, Mall of Montenegro',
   'Boce Aqua Bianca u rashladnoj vitrini': 'Aqua Bianca bottles in a chiller', 'Konobar služi Aqua Bianca u staklu': 'Waiter serving Aqua Bianca in glass',
-  'Galon 15/19 l na aparatu za vodu': '15/19 l cooler bottle on a water dispenser',
+  'Galon 15/19 l na aparatu za vodu': '15/19 l cooler bottle on a water dispenser',  // venues
+  'Gdje nas naći': 'Where to find us', 'Na najboljim stolovima.': 'On the finest tables.', 'Širom Crne Gore.': 'All across Montenegro.',
+  'Hoteli, restorani i barovi služe Aqua Biancu svojim gostima — od planinskih resorta na sjeveru do marina na obali.':
+    'Hotels, restaurants and bars serve Aqua Bianca to their guests — from mountain resorts in the north to marinas on the coast.',
+  'Izvor · Radigojno, Kolašin': 'Source · Radigojno, Kolašin',
+  'Mapa Crne Gore sa objektima koji služe Aqua Biancu': 'Map of Montenegro with venues serving Aqua Bianca', 'Fotografije iz objekata': 'Photos from our venues',
+  'Prethodne fotografije': 'Previous photos', 'Sljedeće fotografije': 'Next photos',
+  'Aqua Bianca uz bazen hotela Regent Porto Montenegro': 'Aqua Bianca by the pool at Regent Porto Montenegro',
+  'Aqua Bianca na terasi hotela Bianca u Kolašinu': 'Aqua Bianca on the terrace of Hotel Bianca in Kolašin',
+  'Boce Aqua Bianca sa etiketom restorana Siro': 'Aqua Bianca bottles with the Siro restaurant label',
+  'Aqua Bianca uz doručak u restoranu Babi': 'Aqua Bianca with breakfast at Babi Restaurant',
+  'Aqua Bianca na stolu u Portonovom u sumrak': 'Aqua Bianca on a table at Portonovi at dusk',
+  'Aqua Bianca na terasi hotela Swissotel u Kolašinu': 'Aqua Bianca on the terrace of Swissotel in Kolašin',
+  'Aqua Bianca na stolu restorana Forza Porto uveče, uz more': 'Aqua Bianca on a table at Forza Porto in the evening, by the sea',
+  'Aqua Bianca uz vino u baru Bucca': 'Aqua Bianca with wine at Bucca Wine Bar',
+  'Aqua Bianca na terasi restorana 21 Urban u Luštica Bay': 'Aqua Bianca on the terrace of 21 Urban at Luštica Bay',
+  'Aqua Bianca u posudi sa ledom na plaži Barbossa': 'Aqua Bianca in an ice bucket at Barbossa Beach',
+  'Aqua Bianca na večeri u Besac Heritage': 'Aqua Bianca at dinner at Besac Heritage',
+  'Boca Aqua Bianca sa etiketom hotela Stara Čaršija': 'Aqua Bianca bottle with the Stara Čaršija hotel label',
+  'Aqua Bianca u staklu na stolu paba Welder': 'Aqua Bianca in glass on a table at Welder Pub',
+  // co-branded bottles
+  'Vaše ime.': 'Your name.', 'Naša voda.': 'Our water.',
+  'Za hotele i restorane punimo staklene boce sa etiketom vašeg objekta — prirodna izvorska voda Aqua Bianca, servirana gostima pod vašim imenom.':
+    'For hotels and restaurants we fill glass bottles carrying your venue’s label — natural Aqua Bianca spring water, served to your guests under your name.',
+  'Staklo 0,25 l i 0,75 l': 'Glass 0.25 l and 0.75 l', 'Etiketa': 'Label', 'Vaš znak uz Aqua Bianca': 'Your logo alongside Aqua Bianca',
+  'Za koga': 'For', 'Hoteli, restorani, resorti': 'Hotels, restaurants, resorts', 'Boce sa vašim imenom': 'Bottles with your name',
+  'Boca Aqua Bianca sa etiketom restorana Babi': 'Aqua Bianca bottle with the Babi restaurant label',
+  // video
+  'Boca Aqua Bianca izranja iz mape Crne Gore, kod Kolašina': 'An Aqua Bianca bottle rising from a map of Montenegro, near Kolašin',
+  'Reklama za Aqua Bianca kisjelu vodu uz kafu': 'Aqua Bianca sparkling water advert, served with coffee',
 }));
 
 const KEY = 'ab-lang';

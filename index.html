@@ -41,6 +41,7 @@
   <a href="#kvalitet">Kvalitet</a>
   <a href="#trenuci">Trenuci</a>
   <a href="#zajednica">Zajednica</a>
+  <a href="#mjesta">Gdje nas naći</a>
   <a href="#partneri">Partneri</a>
   <a href="#kontakt">Kontakt</a>
   <div class="lang"><a href="?lang=me" data-lang="me" class="active" hreflang="sr-ME">MNE</a><a href="?lang=en" data-lang="en" hreflang="en">EN</a></div>
@@ -48,8 +49,11 @@
 
 <main id="top">
 
-<!-- ============ HERO (WebGL water ripple over aerial photo) ============ -->
+<!-- ============ HERO (video iz prirode, WebGL talasanje prati kursor) ============ -->
 <section class="hero" id="hero" data-hero>
+  <video class="hero-video" id="heroVideo" muted loop playsinline preload="auto" poster="assets/video-web/hero-poster.jpg" aria-hidden="true">
+    <source src="assets/video-web/hero.mp4" type="video/mp4">
+  </video>
   <canvas id="heroGL" aria-hidden="true"></canvas>
   <div class="hero-fallback" aria-hidden="true"></div>
   <div class="hero-shade" aria-hidden="true"></div>
@@ -79,6 +83,7 @@
 <section class="collections wrap">
   <a class="tile tile-s reveal" href="#asortiman" data-goto="izvorska-pet">
     <img src="assets/web/mirna-PET2w.jpg" alt="Izvorska voda Aqua Bianca u PET ambalaži" loading="lazy">
+    <video class="tile-video" muted loop playsinline preload="none" poster="assets/video-web/izvorska-loop.jpg" data-src="assets/video-web/izvorska-loop.mp4" aria-hidden="true"></video>
     <span class="tile-label">Izvorska voda<small>PET ambalaža</small></span>
     <span class="tile-btn">Pogledaj asortiman</span>
   </a>
@@ -89,6 +94,7 @@
   </a>
   <a class="tile tile-l green reveal" href="#asortiman" data-goto="kisjela-pet">
     <img src="assets/web/Kisjela-033Fw.jpg" alt="Kisjela voda Aqua Bianca u PET ambalaži" loading="lazy">
+    <video class="tile-video" muted loop playsinline preload="none" poster="assets/video-web/kisjela-loop.jpg" data-src="assets/video-web/kisjela-loop.mp4" aria-hidden="true"></video>
     <span class="tile-label">Kisjela voda<small>PET ambalaža</small></span>
     <span class="tile-btn">Pogledaj asortiman</span>
   </a>
@@ -207,6 +213,10 @@
   <div class="wrap origin-grid">
     <figure class="origin-img reveal">
       <img src="assets/web/f18.jpg" alt="Pogled iz vazduha na dolinu kod Kolašina" loading="lazy" data-parallax>
+      <div class="origin-clip">
+        <video muted playsinline preload="none" poster="assets/video-web/izvor-mapa.jpg" data-src="assets/video-web/izvor-mapa.mp4" aria-label="Boca Aqua Bianca izranja iz mape Crne Gore, kod Kolašina"></video>
+        <span>Radigojno, Kolašin</span>
+      </div>
     </figure>
     <div class="origin-text">
       <h2 class="h2 reveal">Daleko od industrije. <em>Blizu prirode.</em></h2>
@@ -254,7 +264,7 @@
       <figure class="m1 reveal"><img src="assets/instagram-web/staklo-na-stijeni-talas.webp" alt="Staklena boca Aqua Bianca na stijeni uz more" loading="lazy"><figcaption>Uz more</figcaption></figure>
       <figure class="m2 reveal"><img src="assets/instagram-web/sipanje-1.webp" alt="Sipanje vode Aqua Bianca u čašu" loading="lazy"><figcaption>Za stolom</figcaption></figure>
       <figure class="m3 reveal"><img src="assets/instagram-web/teretana-sklekovi.webp" alt="Aqua Bianca Sport na treningu" loading="lazy"><figcaption>Na treningu</figcaption></figure>
-      <figure class="m4 reveal"><img src="assets/instagram-web/dubai.webp" alt="Boca Aqua Bianca na putovanju" loading="lazy"><figcaption>Na putu</figcaption></figure>
+      <figure class="m4 reveal"><video class="mom-video" muted loop playsinline preload="none" poster="assets/video-web/kisjela-reklama.jpg" data-src="assets/video-web/kisjela-reklama.mp4" aria-label="Reklama za Aqua Bianca kisjelu vodu uz kafu"></video><figcaption>#BiancaKisjela</figcaption></figure>
       <figure class="m5 reveal"><img src="assets/instagram-web/staklo-kafa.webp" alt="Aqua Bianca u staklu uz kafu" loading="lazy"><figcaption>Uz kafu</figcaption></figure>
       <figure class="m6 reveal"><img src="assets/instagram-web/bazen.webp" alt="Aqua Bianca uz bazen" loading="lazy"><figcaption>Na odmoru</figcaption></figure>
     </div>
@@ -279,6 +289,76 @@
   </div>
 </section>
 
+
+<!-- ============ GDJE NAS NAĆI (objekti koji služe Aqua Biancu) ============ -->
+<section class="venues" id="mjesta">
+  <div class="wrap">
+    <div class="ven-head">
+      <h2 class="h2 reveal">Na najboljim stolovima. <em>Širom Crne Gore.</em></h2>
+      <p class="reveal">Hoteli, restorani i barovi služe Aqua Biancu svojim gostima — od planinskih resorta na sjeveru do marina na obali.</p>
+    </div>
+    <div class="ven-grid">
+      <div class="ven-map reveal">
+        <svg viewBox="-50 -5 500 495" role="img" aria-label="Mapa Crne Gore sa objektima koji služe Aqua Biancu">
+          <path class="land" d="M12.7,320.3L13.5,316.0L12.0,312.7L9.0,310.7L6.7,309.8L4.5,306.4L2.2,302.6L0.7,298.3L0.7,293.5L1.5,284.5L0.7,279.7L3.0,277.8L5.2,276.8L7.5,276.8L9.7,278.2L12.0,278.2L12.7,276.3L12.7,273.9L11.2,271.1L15.0,268.7L17.2,267.2L21.7,262.9L22.5,260.6L24.0,257.2L24.0,249.1L21.7,240.9L18.7,236.6L14.2,232.3L6.7,220.4L4.5,213.7L2.2,206.5L2.2,201.7L3.7,198.9L6.7,196.5L8.2,194.1L6.7,188.4L2.2,178.3L0.0,172.6L0.0,167.8L3.7,156.8L10.5,150.6L21.7,148.2L34.5,148.2L42.7,149.2L39.0,127.6L39.0,120.5L39.0,119.5L40.4,110.9L44.2,103.7L53.2,91.3L47.9,88.9L50.9,84.1L77.9,65.0L83.1,63.1L82.4,62.1L81.6,59.3L80.9,58.3L84.6,56.4L96.6,55.5L101.9,56.9L107.1,60.7L108.6,62.6L109.4,64.5L108.6,66.5L109.4,68.8L110.9,72.2L115.4,77.4L115.4,77.9L116.1,79.4L118.4,77.4L119.9,75.1L121.3,72.7L122.1,70.8L122.8,70.3L125.1,68.8L131.1,68.8L132.6,67.4L125.8,55.5L119.9,38.7L112.4,29.2L110.9,28.2L106.4,29.2L106.4,27.7L107.9,25.3L107.9,23.4L104.9,19.1L103.4,18.2L100.4,17.7L98.1,16.3L98.1,13.9L99.6,11.5L101.1,10.0L104.9,8.1L110.1,2.4L113.1,0.5L117.6,0.0L120.6,2.9L122.8,6.7L125.8,10.0L129.6,11.5L133.3,11.5L137.8,9.6L143.1,3.3L148.3,2.4L158.1,4.3L154.3,10.5L154.3,18.6L158.1,26.3L163.3,31.1L191.8,43.5L195.5,46.4L203.7,59.3L216.5,71.7L218.7,75.5L222.5,83.7L224.7,87.0L231.5,93.2L232.2,93.2L239.0,101.8L241.9,105.2L246.4,107.1L255.4,110.0L259.9,110.4L262.9,109.5L264.4,108.0L265.9,108.0L272.7,119.0L276.4,124.3L280.1,127.6L285.4,129.6L292.1,130.0L299.6,129.6L301.9,127.6L306.4,122.9L308.6,121.9L310.9,122.9L312.4,124.8L313.9,127.6L315.4,130.5L317.6,132.9L330.3,141.5L337.1,148.7L337.8,149.2L349.8,161.6L352.8,162.5L355.1,163.0L366.3,164.5L372.3,166.8L383.5,175.0L396.3,181.2L399.3,186.0L400.0,192.7L397.8,203.7L380.5,206.5L373.0,209.9L370.8,210.8L369.3,213.7L369.3,216.6L369.3,219.4L369.3,221.8L364.0,228.0L357.3,225.7L349.1,220.9L341.6,219.0L339.3,220.4L337.1,221.8L333.3,225.2L331.1,227.6L331.1,233.3L333.3,237.6L345.3,249.1L346.8,251.9L347.6,253.4L344.6,260.6L342.3,264.9L341.6,267.2L341.6,272.0L342.3,275.8L341.6,279.7L339.3,283.5L334.1,280.2L329.6,283.5L322.1,293.5L316.9,295.0L306.4,294.5L301.1,298.3L299.6,300.2L291.4,305.0L290.6,305.5L288.4,306.0L284.6,305.5L280.9,303.6L274.2,298.3L270.4,289.7L269.7,286.8L269.7,284.9L270.4,280.6L270.4,278.7L271.9,275.4L272.7,273.9L273.4,273.9L273.4,271.5L272.7,268.7L271.2,261.5L268.2,255.3L262.9,252.9L258.4,254.8L254.7,258.2L252.4,260.6L247.2,266.8L243.4,272.5L242.7,276.3L241.2,284.0L240.4,287.3L237.5,290.2L234.5,292.1L232.2,294.0L230.7,298.3L228.5,303.6L225.5,308.4L222.5,312.2L218.0,315.1L215.0,319.8L204.5,332.3L203.7,333.7L201.5,338.5L201.5,340.4L201.5,344.2L200.7,345.6L181.3,377.2L175.3,383.9L174.5,386.8L176.8,391.5L179.8,395.4L191.8,404.0L194.8,407.8L195.5,408.8L195.5,411.1L191.8,419.7L191.0,424.5L191.0,430.3L191.8,435.5L193.3,439.8L194.8,441.7L194.0,446.5L192.5,447.5L191.0,448.0L189.5,448.9L191.0,455.6L191.0,457.5L190.3,459.0L189.5,460.4L189.5,462.3L189.5,463.3L190.3,464.7L191.8,466.6L194.0,469.5L193.3,477.1L194.0,480.0L190.3,476.6L182.0,468.0L179.0,466.1L163.3,460.9L160.3,459.0L155.1,456.6L153.6,455.6L151.3,452.7L151.3,451.3L152.1,449.9L151.3,447.0L149.8,446.5L148.3,444.6L146.8,442.2L147.6,441.3L147.6,439.8L146.8,426.0L134.8,415.0L133.3,411.1L135.6,406.8L133.3,405.4L131.1,404.0L128.1,398.2L119.9,398.7L118.4,395.4L117.6,392.5L116.9,391.5L115.4,391.5L113.9,390.6L110.9,384.9L107.9,381.5L99.6,375.3L97.4,371.0L95.9,361.4L94.4,357.6L91.4,355.7L87.6,355.7L83.9,357.1L82.4,359.5L81.6,358.1L80.1,357.1L80.1,355.7L76.4,357.6L74.9,358.6L74.2,360.0L73.4,360.5L71.9,361.4L70.4,359.5L68.2,355.7L61.4,350.0L58.4,346.1L58.4,342.3L56.9,341.3L55.4,339.0L53.9,338.0L53.9,336.1L54.7,332.3L50.9,328.9L46.4,328.4L45.7,334.2L44.2,334.2L42.7,333.2L38.2,333.7L37.5,333.2L36.0,331.3L33.7,329.4L30.7,327.5L28.5,327.0L29.2,326.0L29.2,325.6L29.2,325.1L30.0,324.6L24.7,320.8L23.2,317.9L24.0,315.1L27.0,314.1L44.2,319.8L46.4,320.3L52.4,323.7L55.4,327.0L56.9,322.2L56.9,318.9L51.7,308.4L51.7,305.5L52.4,301.2L45.7,310.3L36.7,312.2L14.2,308.8L14.2,311.2L18.0,314.1L16.5,322.2L20.2,324.6L15.7,323.2L12.7,320.3Z"/>
+          <circle class="src" cx="226.4" cy="205.3" r="34"/>
+          <line class="leader" x1="84.5" y1="357.1" x2="74" y2="384"/>
+          <line class="leader" x1="54.5" y1="314.6" x2="26" y2="346"/>
+          <line class="leader" x1="47" y1="326.2" x2="26" y2="370"/>
+          <g class="town" transform="translate(192.3 53.9)"><circle r="4"/><text x="13.7" y="6.1" text-anchor="start">Pljevlja</text></g>
+          <g class="town" transform="translate(143.4 111.3)"><circle r="4"/><text x="13.6" y="5.7" text-anchor="start">Žabljak</text></g>
+          <g class="town" transform="translate(273.2 144.2)"><circle r="4"/><text x="13.8" y="5.8" text-anchor="start">Bijelo Polje</text></g>
+          <g class="town" transform="translate(239.1 166.3)"><circle r="4"/><text x="-13.1" y="-0.3" text-anchor="end">Mojkovac</text></g>
+          <g class="town" transform="translate(299.4 199.4)"><circle r="4"/><text x="13.6" y="-9.4" text-anchor="start">Berane</text></g>
+          <g class="town" transform="translate(360.6 202.2)"><circle r="4"/><text x="-0.6" y="25.8" text-anchor="middle">Rožaje</text></g>
+          <g class="town" transform="translate(106.1 219.2)"><circle r="4"/><text x="-13.1" y="5.8" text-anchor="end">Nikšić</text></g>
+          <g class="town" transform="translate(314.4 269)"><circle r="4"/><text x="13.6" y="6" text-anchor="start">Plav</text></g>
+          <g class="town" transform="translate(139.4 281.2)"><circle r="4"/><text x="12.6" y="5.8" text-anchor="start">Danilovgrad</text></g>
+          <g class="town" transform="translate(172.5 313.2)"><circle r="4"/><text x="13.5" y="5.8" text-anchor="start">Podgorica</text></g>
+          <g class="town" transform="translate(70.1 318)"><circle r="4"/><text x="7.9" y="-18" text-anchor="start">Kotor</text></g>
+          <g class="town" transform="translate(101.8 327.4)"><circle r="4"/><text x="10.2" y="5.6" text-anchor="start">Cetinje</text></g>
+          <g class="town" transform="translate(84.5 357.1)"><circle r="4"/><text x="-14.5" y="32.9" text-anchor="end">Budva</text></g>
+          <g class="town" transform="translate(138.6 411.7)"><circle r="4"/><text x="13.4" y="6.3" text-anchor="start">Bar</text></g>
+          <g class="pin" data-place="kolasin" transform="translate(226.4 205.3)" tabindex="0" role="button" aria-label="Kolašin"><circle class="halo" r="18"/><circle class="dot" r="6.5"/><text x="-14.4" y="5.7" text-anchor="end">Kolašin</text></g>
+          <g class="pin" data-place="portonovi" transform="translate(32 314.3)" tabindex="0" role="button" aria-label="Herceg Novi"><circle class="halo" r="18"/><circle class="dot" r="6.5"/><text x="-11" y="-23.3" text-anchor="middle">Herceg Novi</text></g>
+          <g class="pin" data-place="tivat" transform="translate(54.5 314.6)" tabindex="0" role="button" aria-label="Tivat"><circle class="halo" r="18"/><circle class="dot" r="6.5"/><text x="-32.5" y="37.4" text-anchor="end">Tivat</text></g>
+          <g class="pin" data-place="lustica" transform="translate(47 326.2)" tabindex="0" role="button" aria-label="Luštica"><circle class="halo" r="18"/><circle class="dot" r="6.5"/><text x="-25" y="49.8" text-anchor="end">Luštica</text></g>
+          <g class="pin" data-place="virpazar" transform="translate(137.1 368.4)" tabindex="0" role="button" aria-label="Virpazar"><circle class="halo" r="18"/><circle class="dot" r="6.5"/><text x="13.9" y="5.6" text-anchor="start">Virpazar</text></g>
+          <g class="pin" data-place="ulcinj" transform="translate(164.4 458.2)" tabindex="0" role="button" aria-label="Ulcinj"><circle class="halo" r="18"/><circle class="dot" r="6.5"/><text x="13.6" y="5.8" text-anchor="start">Ulcinj</text></g>
+        </svg>
+        <p class="ven-legend"><i></i>Izvor · Radigojno, Kolašin</p>
+      </div>
+      <div class="ven-strip" id="venStrip" tabindex="0" aria-label="Fotografije iz objekata">
+        <figure data-place="tivat"><img src="assets/venues-web/regent.webp" width="960" height="1130" alt="Aqua Bianca uz bazen hotela Regent Porto Montenegro" loading="lazy" draggable="false"><figcaption><b>Regent Porto Montenegro</b><span>Tivat</span></figcaption></figure>
+        <figure data-place="kolasin"><img src="assets/venues-web/bianca-resort.webp" width="960" height="1140" alt="Aqua Bianca na terasi hotela Bianca u Kolašinu" loading="lazy" draggable="false"><figcaption><b>Bianca Hotels & Spa</b><span>Kolašin</span></figcaption></figure>
+        <figure data-place="tivat"><img src="assets/venues-web/siro.webp" width="960" height="1130" alt="Boce Aqua Bianca sa etiketom restorana Siro" loading="lazy" draggable="false"><figcaption><b>Siro Boka Place</b><span>Tivat</span></figcaption></figure>
+        <figure><img src="assets/venues-web/babi.webp" width="960" height="565" alt="Aqua Bianca uz doručak u restoranu Babi" loading="lazy" draggable="false"><figcaption><b>Babi Restaurant</b></figcaption></figure>
+        <figure data-place="portonovi"><img src="assets/venues-web/portonovi.webp" width="960" height="1130" alt="Aqua Bianca na stolu u Portonovom u sumrak" loading="lazy" draggable="false"><figcaption><b>Portonovi</b><span>Herceg Novi</span></figcaption></figure>
+        <figure data-place="kolasin"><img src="assets/venues-web/swissotel.webp" width="410" height="900" alt="Aqua Bianca na terasi hotela Swissotel u Kolašinu" loading="lazy" draggable="false"><figcaption><b>Swissotel Resort Kolašin</b><span>Kolašin</span></figcaption></figure>
+        <figure><img src="assets/venues-web/forza-porto.webp" width="960" height="1130" alt="Aqua Bianca na stolu restorana Forza Porto uveče, uz more" loading="lazy" draggable="false"><figcaption><b>Forza Porto Restaurant</b></figcaption></figure>
+        <figure><img src="assets/venues-web/bucca.webp" width="960" height="690" alt="Aqua Bianca uz vino u baru Bucca" loading="lazy" draggable="false"><figcaption><b>Bucca Wine Bar</b></figcaption></figure>
+        <figure data-place="lustica"><img src="assets/venues-web/21-urban-lustica.webp" width="960" height="1130" alt="Aqua Bianca na terasi restorana 21 Urban u Luštica Bay" loading="lazy" draggable="false"><figcaption><b>21 Urban Luštica Bay</b><span>Luštica</span></figcaption></figure>
+        <figure data-place="ulcinj"><img src="assets/venues-web/barbossa.webp" width="960" height="1095" alt="Aqua Bianca u posudi sa ledom na plaži Barbossa" loading="lazy" draggable="false"><figcaption><b>Barbossa Beach</b><span>Ulcinj</span></figcaption></figure>
+        <figure data-place="virpazar"><img src="assets/venues-web/besac.webp" width="565" height="1160" alt="Aqua Bianca na večeri u Besac Heritage" loading="lazy" draggable="false"><figcaption><b>Besac Heritage</b><span>Virpazar</span></figcaption></figure>
+        <figure><img src="assets/venues-web/stara-carsija.webp" width="960" height="1130" alt="Boca Aqua Bianca sa etiketom hotela Stara Čaršija" loading="lazy" draggable="false"><figcaption><b>Stara Čaršija Hotel & Spa</b></figcaption></figure>
+        <figure><img src="assets/venues-web/welder.webp" width="960" height="1165" alt="Aqua Bianca u staklu na stolu paba Welder" loading="lazy" draggable="false"><figcaption><b>Welder Pub</b></figcaption></figure>
+      </div>
+    </div>
+    <div class="ven-nav">
+      <div class="ven-progress"><span id="venBar"></span></div>
+      <div class="sc-nav">
+        <button class="circle" id="venPrev" aria-label="Prethodne fotografije">&larr;</button>
+        <button class="circle" id="venNext" aria-label="Sljedeće fotografije">&rarr;</button>
+      </div>
+    </div>
+  </div>
+  <div class="marquee ven-names" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Regent Porto Montenegro</span><i></i><span>Bianca Hotels & Spa</span><i></i><span>Siro Boka Place</span><i></i><span>21 Mne Urban Bistro</span><i></i><span>Babi Restaurant</span><i></i><span>Portonovi</span><i></i><span>Swissotel Resort Kolašin</span><i></i><span>Forza Porto Restaurant</span><i></i><span>Bucca Wine Bar</span><i></i><span>21 Urban Luštica Bay</span><i></i><span>Barbossa Beach</span><i></i><span>Besac Heritage</span><i></i><span>Stara Čaršija Hotel & Spa</span><i></i><span>Welder Pub</span><i></i>
+      <span>Regent Porto Montenegro</span><i></i><span>Bianca Hotels & Spa</span><i></i><span>Siro Boka Place</span><i></i><span>21 Mne Urban Bistro</span><i></i><span>Babi Restaurant</span><i></i><span>Portonovi</span><i></i><span>Swissotel Resort Kolašin</span><i></i><span>Forza Porto Restaurant</span><i></i><span>Bucca Wine Bar</span><i></i><span>21 Urban Luštica Bay</span><i></i><span>Barbossa Beach</span><i></i><span>Besac Heritage</span><i></i><span>Stara Čaršija Hotel & Spa</span><i></i><span>Welder Pub</span><i></i>
+    </div>
+  </div>
+</section>
 
 <!-- ============ ZA PARTNERE ============ -->
 <section class="p-hero" id="partneri">
@@ -329,6 +409,24 @@
         <p>Galoni od 10 l (nepovratna) i 15 / 19 l (povratna ambalaža) za aparate za vodu.</p>
         <a class="link-arrow" href="#kontakt" data-topic="coolers">Naručite galone</a>
       </article>
+    </div>
+
+    <div class="cobrand">
+      <div class="cb-imgs">
+        <img class="reveal" src="assets/venues-web/stara-carsija.webp" alt="Boca Aqua Bianca sa etiketom hotela Stara Čaršija" loading="lazy" style="object-position:38% 50%">
+        <img class="reveal" src="assets/venues-web/siro.webp" alt="Boce Aqua Bianca sa etiketom restorana Siro" loading="lazy">
+        <img class="reveal" src="assets/venues-web/babi.webp" alt="Boca Aqua Bianca sa etiketom restorana Babi" loading="lazy" style="object-position:78% 50%">
+      </div>
+      <div class="cb-text">
+        <h2 class="h2 reveal">Vaše ime. <em>Naša voda.</em></h2>
+        <p class="reveal">Za hotele i restorane punimo staklene boce sa etiketom vašeg objekta — prirodna izvorska voda Aqua Bianca, servirana gostima pod vašim imenom.</p>
+        <ul class="reveal">
+          <li><span>Ambalaža</span><span>Staklo 0,25 l i 0,75 l</span></li>
+          <li><span>Etiketa</span><span>Vaš znak uz Aqua Bianca</span></li>
+          <li><span>Za koga</span><span>Hoteli, restorani, resorti</span></li>
+        </ul>
+        <a class="link-arrow reveal" href="#kontakt" data-topic="label">Zatražite ponudu</a>
+      </div>
     </div>
   </div>
 </section>
@@ -397,6 +495,7 @@
             <option value="distribution">Distribucija / veleprodaja</option>
             <option value="retail">Maloprodaja</option>
             <option value="horeca">HoReCa</option>
+            <option value="label">Boce sa vašim imenom</option>
             <option value="coolers">Galoni za kancelariju / dom</option>
             <option value="media">Mediji</option>
           </select>
@@ -459,7 +558,7 @@
   "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
 } }
 </script>
-<script type="module">import { initChrome } from './chrome.js'; import { initB2B } from './b2b.js'; import { initI18n } from './i18n.js'; initChrome(); initB2B(); initI18n();</script>
+<script type="module">import { initChrome } from './chrome.js'; import { initB2B } from './b2b.js'; import { initI18n } from './i18n.js'; import { initMedia } from './media.js'; import { initVenues } from './venues.js'; initChrome(); initB2B(); initI18n(); initMedia(); initVenues();</script>
 <script type="module" src="main.js"></script>
 </body>
 </html>
