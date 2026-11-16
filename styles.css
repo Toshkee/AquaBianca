@@ -403,9 +403,9 @@ p{max-width:62ch}
 
 /* boce sa vašim imenom */
 .cobrand{display:grid;grid-template-columns:5fr 6fr;gap:clamp(30px,5vw,80px);align-items:center;margin-top:clamp(70px,8vw,120px);padding-top:clamp(56px,6vw,88px);border-top:1px solid var(--line)}
-.cb-imgs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:end}
-.cb-imgs img{width:100%;aspect-ratio:3/4.4;object-fit:cover;display:block}
-.cb-imgs img:nth-child(2){aspect-ratio:3/5}
+.cb-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cb-imgs img{width:100%;height:auto;display:block}
+.cb-imgs img:nth-child(3){grid-column:1/-1}
 .cb-text p{color:var(--muted);font-size:17px;margin-bottom:28px;max-width:520px}
 .cb-text ul{list-style:none;margin:0 0 34px;padding:0;border-top:1px solid var(--line)}
 .cb-text li{padding:14px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;justify-content:space-between;gap:20px}
@@ -442,7 +442,7 @@ p{max-width:62ch}
   .footer-grid{grid-template-columns:1fr 1fr}
   .footer-brand{grid-column:1/-1}
   .comm-grid{grid-auto-rows:110px;gap:12px}
-  .c1{grid-column:1/13;grid-row:span 2}.c2{grid-column:1/7;grid-row:span 3}.c5{grid-column:7/13;grid-row:span 3}.c3{grid-column:1/7}.c4{grid-column:7/13}
+  .c1{grid-column:1/13;grid-row:1/span 2}.c2{grid-column:1/7;grid-row:3/span 3}.c5{grid-column:7/13;grid-row:3/span 3}.c3{grid-column:1/7;grid-row:6/span 1}.c4{grid-column:7/13;grid-row:6/span 1}
   .mom-head{grid-template-columns:1fr}
   .mom-grid{grid-auto-rows:84px;gap:12px}
   .m1{grid-column:1/13;grid-row:span 4}.m2{grid-column:1/7;grid-row:span 2}.m3{grid-column:7/13;grid-row:span 2}.m4{grid-column:1/7;grid-row:span 4}.m5{grid-column:7/13;grid-row:span 2}.m6{grid-column:7/13;grid-row:span 2}
