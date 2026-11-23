@@ -142,6 +142,9 @@ const EN = new Map(Object.entries({
   'Staklo 0,25 l i 0,75 l': 'Glass 0.25 l and 0.75 l', 'Etiketa': 'Label', 'Vaš znak uz Aqua Bianca': 'Your logo alongside Aqua Bianca',
   'Za koga': 'For', 'Hoteli, restorani, resorti': 'Hotels, restaurants, resorts', 'Boce sa vašim imenom': 'Bottles with your name',
   'Boca Aqua Bianca sa etiketom restorana Babi': 'Aqua Bianca bottle with the Babi restaurant label',
+  // collaborations
+  'Saradnje': 'Partnerships', 'koje traju.': 'that last.',
+  'Godinama sarađujemo sa partnerima koji, kao i mi, okupljaju ljude širom Crne Gore.': 'For years we have worked with partners who, like us, bring people together across Montenegro.',
   // video
   'Boca Aqua Bianca izranja iz mape Crne Gore, kod Kolašina': 'An Aqua Bianca bottle rising from a map of Montenegro, near Kolašin',
   'Reklama za Aqua Bianca kisjelu vodu uz kafu': 'Aqua Bianca sparkling water advert, served with coffee',
