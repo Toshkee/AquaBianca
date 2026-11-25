@@ -2,8 +2,6 @@
 
 Redizajn sajta [aquabianca.com](https://www.aquabianca.com). Jedna stranica (MNE / EN), bez build koraka.
 
-**Uživo (prototip):** https://aquabianca-prototip.vercel.app
-
 ## Pokretanje lokalno
 
 ```bash
@@ -11,14 +9,6 @@ python3 -m http.server 5178
 ```
 
 Otvoriti http://localhost:5178 (engleski: http://localhost:5178/?lang=en).
-
-## Objava na Vercel
-
-```bash
-./deploy.sh
-```
-
-Skripta sklapa folder `deploy/` (samo fajlovi koje sajt koristi) i objavljuje ga na Vercel projekat `aquabianca-prototip`.
 
 ## Struktura
 

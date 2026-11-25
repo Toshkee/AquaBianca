@@ -3,7 +3,7 @@
  * Statički tekst se prevodi po originalnom (crnogorskom) tekstu, pa HTML ostaje čist.
  * Moduli koji sami generišu tekst (asortiman, tabela, brojači) koriste t() i num(),
  * i ponovo se iscrtavaju na događaj 'ab:lang'.
- * Jezik: ?lang=en u adresi (ili /en na Vercelu), pamti se izbor.
+ * Jezik: ?lang=en u adresi, pamti se izbor.
  */
 const EN = new Map(Object.entries({
   // head / a11y
