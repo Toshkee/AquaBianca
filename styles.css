@@ -265,6 +265,7 @@ p{max-width:62ch}
 .cl-mark{height:clamp(64px,6vw,88px);display:flex;align-items:center}
 /* logos have different shapes, so each gets its own optical size (--s) */
 .cl-logo{height:calc(72% * var(--s,1));width:auto;max-width:100%;object-fit:contain}
+.cl-card{border-radius:6px}
 .collab-list li:nth-child(odd){padding-right:24px;border-right:1px solid var(--line)}
 .collab-list li:nth-child(even){padding-left:28px}
 .cl-name{font-family:var(--serif);font-weight:300;font-size:clamp(26px,2.6vw,38px);line-height:1.05;letter-spacing:-.03em;color:var(--ink)}

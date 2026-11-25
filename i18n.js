@@ -95,8 +95,8 @@ const EN = new Map(Object.entries({
   'Isporuka': 'Delivery', 'Redovna isporuka iz pogona u Kolašinu.': 'Regular deliveries from our plant in Kolašin.',
   // contact
   'Razgovarajmo.': "Let's talk.", 'Za pitanja, saradnju, ponudu ili dostavu galona — javite nam se.': 'Questions, partnerships, quotes or cooler bottle delivery — get in touch.',
-  'Uprava': 'Head office', 'DOO „Aqua Bianca“': 'Aqua Bianca d.o.o.', 'Manastirska 25, Podgorica': 'Manastirska 25, Podgorica, Montenegro',
-  'Pogon za preradu i flaširanje vode': 'Water processing and bottling plant', 'Telefon za potrošače': 'Consumer line',
+  'Sjedište': 'Head office', 'DOO „Aqua Bianca“': 'Aqua Bianca d.o.o.', 'Manastirska 25, Podgorica': 'Manastirska 25, Podgorica, Montenegro',
+  'Pogon za preradu i flaširanje vode': 'Water processing and bottling plant', 'Komercijala': 'Sales', 'Administrativna uprava': 'Administration',
   'Ime i prezime': 'Full name', 'Kompanija (opciono)': 'Company (optional)', 'Telefon': 'Phone', 'Tema': 'Subject',
   'Opšti upit': 'General enquiry', 'Distribucija / veleprodaja': 'Distribution / wholesale', 'Maloprodaja': 'Retail',
   'Galoni za kancelariju / dom': 'Cooler bottles for office / home', 'Mediji': 'Media', 'Grad / region': 'City / region',
@@ -143,7 +143,7 @@ const EN = new Map(Object.entries({
   'Za koga': 'For', 'Hoteli, restorani, resorti': 'Hotels, restaurants, resorts', 'Boce sa vašim imenom': 'Bottles with your name',
   'Boca Aqua Bianca sa etiketom restorana Babi': 'Aqua Bianca bottle with the Babi restaurant label',
   // collaborations
-  'Saradnje': 'Partnerships', 'koje traju.': 'that last.',
+  'Saradnje': 'Partnerships', 'koje traju.': 'that last.', 'Serija × Aqua Bianca': 'TV series × Aqua Bianca',
   'Godinama sarađujemo sa partnerima koji, kao i mi, okupljaju ljude širom Crne Gore.': 'For years we have worked with partners who, like us, bring people together across Montenegro.',
   // video
   'Boca Aqua Bianca izranja iz mape Crne Gore, kod Kolašina': 'An Aqua Bianca bottle rising from a map of Montenegro, near Kolašin',
